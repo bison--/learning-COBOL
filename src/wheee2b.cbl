@@ -12,9 +12,14 @@
         PROCEDURE DIVISION.
             DISPLAY 'Enter an amount: ' WITH NO ADVANCING.
             ACCEPT AMOUNT FROM CONSOLE.
-            SET AMOUNT-DOWN TO AMOUNT.
 
+            SET AMOUNT-DOWN TO AMOUNT.
             SUBTRACT 1 FROM AMOUNT-DOWN.
+
+            IF AMOUNT GREATER THAN 80 OR AMOUNT LESS THAN 2
+                DISPLAY 'Amount must be between 2 and 80'
+                STOP RUN
+            END-IF.
 
             PERFORM AMOUNT TIMES
                 PERFORM WRITE-STARS
