@@ -7,6 +7,8 @@ services:
       dockerfile: container/Dockerfile
     stdin_open: true # docker run -i
     tty: true        # docker run -t
+    environment:
+      - COMPILE=not_set
     entrypoint: /scripts/compilerun.sh
     volumes:
       - ./src:/src_cobol

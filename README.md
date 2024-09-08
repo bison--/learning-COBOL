@@ -5,9 +5,14 @@ Initial Post: https://mastodon.social/@bison/113098785359121492
 
 ## run
 
-change the file to compile in `container/scripts/compilerun.sh`
+YOu can use either a parameter to compile your file or the hard-coded filenames in the `container/scripts/compilerun.sh`.
 
-then run:
+With parameter:
+```bash
+docker-compose run --rm -e COMPILE=file_name_without_extension cobol_test
+```
+
+Alternatively change the file to compile in `container/scripts/compilerun.sh` then run:  
 ```bash
 docker-compose run --rm cobol_test
 ```
