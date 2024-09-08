@@ -5,7 +5,7 @@ Initial Post: https://mastodon.social/@bison/113098785359121492
 
 ## run
 
-YOu can use either a parameter to compile your file or the hard-coded filenames in the `container/scripts/compilerun.sh`.
+You can use either a parameter to compile your file or the hard-coded filenames in the `container/scripts/compilerun.sh`.
 
 With parameter:
 ```bash
