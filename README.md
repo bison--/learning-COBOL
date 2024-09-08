@@ -3,9 +3,13 @@
 Solving the [Coding101](https://github.com/chaosdorf/coding101) challenge in COBOL with a basic docker-setup so you don't have to worry about that.   
 Initial Post: https://mastodon.social/@bison/113098785359121492  
 
+## use
+
+Place your codes in the `src` directory with the `.cbl` file extension.
+
 ## run
 
-You can use either a parameter to compile your file or the hard-coded filenames in the `container/scripts/compilerun.sh`.
+You can use either a parameter to compile your file or use the hard-coded filenames in `container/scripts/compilerun.sh`.
 
 With parameter:
 ```bash
@@ -25,7 +29,6 @@ docker-compose run --rm cobol_test
 
 ### "INSPIRATIONS"
 
-* Container: https://github.com/IBM/kubernetes-cobol/tree/master/docker
-* 00BOTTLES: https://www.99-bottles-of-beer.net/language-cobol-1766.html
 * Jetbrains IntelliJ COBOL Plugin:  https://plugins.jetbrains.com/plugin/24811-zowe-cobol-language-support
-
+* Container: https://github.com/IBM/kubernetes-cobol/tree/master/docker
+* 99BOTTLES: https://www.99-bottles-of-beer.net/language-cobol-1766.html
