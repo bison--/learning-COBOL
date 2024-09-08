@@ -1,7 +1,7 @@
 # LEARNING COBOL
 
 Solving the [Coding101](https://github.com/chaosdorf/coding101) challenge in COBOL with a basic docker-setup so you don't have to worry about that.   
-Initial Post: https://mastodon.social/@bison/113098785359121492  
+Initial Post: https://mastodon.social/@bison/113098785359121492
 
 ## use
 
@@ -20,6 +20,11 @@ Alternatively change the file to compile in `container/scripts/compilerun.sh` th
 ```bash
 docker-compose run --rm cobol_test
 ```
+
+## WARNING
+
+I had to set the COBOL compiler to `cobc -fixed`, because in `cobc -free` mode I could not use comments.  
+This also means, that the max number of characters per code-line is limited to 80 characters!
 
 ## Resources
 
