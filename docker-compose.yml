@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  cobol_test:
+    build:
+      context: .
+      dockerfile: container/Dockerfile
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    entrypoint: /scripts/compilerun.sh
+    volumes:
+      - ./src:/src_cobol
+      - ./build:/build
+      - ./container/scripts:/scripts
